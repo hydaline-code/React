@@ -1,44 +1,92 @@
 
-# Math Magicians
+
+
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+#  Math Magicians
 
 > "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 
-![math]()
 
-### [live demo](uploaded soon)
 
-## Built With
+## 🛠Built With
 
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
       alt="react" width="50" height="50" /> </a>
 
-## Get Start
+### Key Features <a name="key-features"></a>
+    - Set up a new project with React and node.js
+    - Use Linters for git hub workflows
 
-To get a clone of the project, run `git@github.com:hydaline-code/Calc-App.git `
+## 💻 Getting Started <a name="getting-started"></a>
 
-### Available Scripts
+To get a local copy up and running, follow these steps.
 
-In the project directory, you can run:
+### Prerequisites
 
-**`npm install`**
+In order to run this project you need:
 
-Gets all the required dependencies of the projects.
+- Visual Studio Code
+- Web browser such as chrome
+- Internet Access
 
-**`npm start`**
+### Setup
 
-Runs the app in the development mode.\
+Clone this repository to your desired folder:
+
+```sh
+  git clone :  https://github.com/hydaline-code/React.git
+  cd folder 
+  code . :open in vscode
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  npm install : if you have Node.js
+  npm start :Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-
-## Author
+```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Live demo
+> A live demo link will be uploaded soon.
 
-- GitHub: [@hydaline-code](https://github.com/hydaline-code)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Author <a name="authors"></a>
+
+👤 **Hydaline**
+
+- GitHub: [https://github.com/hydaline-code]
+- LinkedIn: [https://www.linkedin.com/in/charlene-djoungang-0851aa21a/]
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Apply complete stylings to make more beautiful
+- A complete customization of the SPA
 
 ## 🤝 Contributing
 
