@@ -65,8 +65,8 @@ Install this project with:
 
 ```sh
   npm install : if you have Node.js
-  npm start :Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  npm start : Runs the app in the development mode  at (http://localhost:3000) to view it in your browser.
+   
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +92,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/hydaline-code/React/issues).
 
 ## Show your support
 
@@ -106,4 +106,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
