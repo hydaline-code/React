@@ -13,7 +13,7 @@
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
       alt="react" width="50" height="50" /> </a>
 
-## Get Started
+## Get Start
 
 To get a clone of the project, run `git@github.com:hydaline-code/Calc-App.git `
 
