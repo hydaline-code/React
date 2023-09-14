@@ -6,7 +6,7 @@ const Calculator = () => {
   const [displayValue] = useState('0');
 
   const handleButtonClick = () => {
-  
+
   };
 
   const buttonRows = [
