@@ -22,16 +22,17 @@ h5 {
 .appquote {
   color: rgb(11, 11, 11);
   width: 25%;
- margin-right: 7rem;
- position: relative;
- top: 7rem;
- right: 10rem;
- font-style: italic;
+  margin-right: 7rem;
+  position: relative;
+  top: 7rem;
+  right: 10rem;
+  font-style: italic;
 }
 
 h3 {
   color: blue;
 }
+
 .calculator {
   width: 320px;
   margin: 1rem auto;

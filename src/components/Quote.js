@@ -8,7 +8,7 @@ const QuoteDisplay = () => {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const apiKey = '9KnYazkgIIH/ND2eZrD0Tw==EK5j0lWWuh8Jorvp'; // Replace 'YOUR_API_KEY' with your actual API key
+        const apiKey = '9KnYazkgIIH/ND2eZrD0Tw==EK5j0lWWuh8Jorvp';
 
         const response = await fetch(
           'https://api.api-ninjas.com/v1/quotes?category=happiness',
@@ -17,7 +17,7 @@ const QuoteDisplay = () => {
             headers: {
               'X-Api-Key': apiKey,
             },
-          }
+          },
         );
 
         if (!response.ok) {
@@ -25,9 +25,8 @@ const QuoteDisplay = () => {
         }
 
         const data = await response.json();
-       // setQuote(data[0].quote); // Access the quote text from the first element
-       const randomIndex = Math.floor(Math.random() * data.length);
-       setQuote(data[randomIndex].quote);
+        setQuote(data[0].quote);
+        setQuote(data[0].quote);
         setLoading(false);
       } catch (error) {
         setError(error.message);
@@ -35,10 +34,10 @@ const QuoteDisplay = () => {
       }
     };
 
-    const interval = setInterval(fetchQuote, 5000); // Fetch a new quote every 5 seconds
+    const interval = setInterval(fetchQuote, 5000);
 
     return () => {
-      clearInterval(interval); // Clean up the interval when the component unmounts
+      clearInterval(interval);
     };
   }, []);
 
@@ -47,7 +46,12 @@ const QuoteDisplay = () => {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return (
+      <div>
+        Error:
+        {error}
+      </div>
+    );
   }
 
   return <div>{quote}</div>;
