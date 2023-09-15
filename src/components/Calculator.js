@@ -5,11 +5,11 @@ import './Calculator.css';
 
 const Calculator = () => {
   const [displayValue, setDisplayValue] = useState('0');
-  const [calculatorData, setCalculatorData] = useState({
+  const [calculatorData, setCalculatorData] = useState({ // usestates used
     total: null,
     next: null,
     operation: null,
-  });
+  });// props implemented
 
   const handleButtonClick = (value) => {
     setCalculatorData((prevData) => {
