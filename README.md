@@ -36,6 +36,7 @@
 ### Key Features <a name="key-features"></a>
     - Set up a new project with React and node.js
     - Use Linters for git hub workflows
+    -Added components 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
