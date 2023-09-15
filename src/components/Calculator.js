@@ -3,8 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import calculate from '../logic/calculate';
 import './Calculator.css';
 
-const Calculator = () => { 
-
+const Calculator = () => {
   const [displayValue, setDisplayValue] = useState('0');
   const [calculatorData, setCalculatorData] = useState({
     total: null,
@@ -14,15 +13,13 @@ const Calculator = () => {
 
   const handleButtonClick = (value) => {
     setCalculatorData((prevData) => {
-      const newData = calculate(prevData, value); 
+      const newData = calculate(prevData, value);
       const { total, next, operation } = newData;
       const newDisplayValue = next || total || '0';
-  
-      setDisplayValue(newDisplayValue); // Update the display
-  
-      return newData; 
+      setDisplayValue(newDisplayValue);
+      return newData;
     });
-  }
+  };
   const CalculatorButtons = ({ value, className }) => (
     <button type="button" onClick={() => handleButtonClick(value)} className={className}>
       {value}
