@@ -1,23 +1,34 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import calculate from '../logic/calculate';
 import './Calculator.css';
 
 const Calculator = () => {
-  const [displayValue] = useState('0');
+  const [displayValue, setDisplayValue] = useState('0');
+  const [calculatorData, setCalculatorData] = useState({ // usestates used
+    total: null,
+    next: null,
+    operation: null,
+  });// props implemented
 
-  const handleButtonClick = () => {
-
+  const handleButtonClick = (value) => {
+    setCalculatorData((prevData) => {
+      const newData = calculate(prevData, value);
+      const { total, next, operation } = newData;
+      const newDisplayValue = next || total || '0';
+      setDisplayValue(newDisplayValue);
+      return newData;
+    });
   };
-
-  const CalculatorButtons = ({ value, onClick, className }) => (
-    <button type="button" onClick={onClick} className={className}>
+  const CalculatorButtons = ({ value, className }) => (
+    <button type="button" onClick={() => handleButtonClick(value)} className={className}>
       {value}
     </button>
   );
 
   const buttonRows = [
     ['AC', '+/-', '%', '÷'],
-    ['7', '8', '9', '×'],
+    ['7', '8', '9', 'x'],
     ['4', '5', '6', '-'],
     ['1', '2', '3', '+'],
     ['0', '.', '='],
@@ -27,7 +38,7 @@ const Calculator = () => {
     <div className="calculator">
       <div className="display">{displayValue}</div>
       <div className="buttons">
-        {buttonRows.map((row, rowIndex) => (
+        {buttonRows.map((row) => (
           <div className="row" key={uuidv4()}>
             {row.map((button, columnIndex) => {
               let buttonClass = '';
@@ -38,13 +49,12 @@ const Calculator = () => {
                 buttonClass = 'color';
               }
 
-              const buttonId = `button-${rowIndex}-${columnIndex}`;
+              const buttonId = `button-${button}`;
 
               return (
                 <CalculatorButtons
                   key={buttonId}
                   value={button}
-                  onClick={() => handleButtonClick(button)}
                   className={buttonClass}
                 />
               );
