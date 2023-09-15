@@ -1,10 +1,18 @@
 import Calculator from './components/Calculator';
+import QuoteDisplay from './components/Quote';
 
 function App() {
   return (
+
     <div className="App">
-      <h1>React Calculator App</h1>
+
       <Calculator />
+
+      <p className="appquote">
+        <h3>Checkout some quotes</h3>
+        <QuoteDisplay />
+      </p>
+
     </div>
   );
 }

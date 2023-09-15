@@ -6,9 +6,31 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
+h5 {
   text-align: center;
-  color: rgb(88, 247, 247);
+  color: rgb(14, 16, 16);
+  border: solid 1px black;
+  width: 50%;
+  margin-left: 4rem;
+}
+
+.App {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.appquote {
+  color: rgb(11, 11, 11);
+  width: 25%;
+  margin-right: 7rem;
+  position: relative;
+  top: 7rem;
+  right: 10rem;
+  font-style: italic;
+}
+
+h3 {
+  color: blue;
 }
 
 .calculator {

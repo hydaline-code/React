@@ -37,6 +37,7 @@
     - Set up a new project with React and node.js
     - Use Linters for git hub workflows
     -Added components 
+    -Fetched data from API to display quotes on the screen
 
 ## 💻 Getting Started <a name="getting-started"></a>
 

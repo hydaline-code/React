@@ -36,6 +36,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
+      <h5>React Calculator App</h5>
       <div className="display">{displayValue}</div>
       <div className="buttons">
         {buttonRows.map((row) => (
