@@ -4,16 +4,25 @@ import calculate from '../logic/calculate';
 import './Calculator.css';
 
 const Calculator = () => { 
- const [displayValue, setDisplayValue] = useState('0');
+
+  const [displayValue, setDisplayValue] = useState('0');
+  const [calculatorData, setCalculatorData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
   const handleButtonClick = (value) => {
-    const newData = calculate(displayValue, value);
-    const { total, next } = newData;
-    const newDisplayValue = next || total || '0';
-
-    setDisplayValue(newDisplayValue); 
-  };
-
+    setCalculatorData((prevData) => {
+      const newData = calculate(prevData, value); 
+      const { total, next, operation } = newData;
+      const newDisplayValue = next || total || '0';
+  
+      setDisplayValue(newDisplayValue); // Update the display
+  
+      return newData; 
+    });
+  }
   const CalculatorButtons = ({ value, className }) => (
     <button type="button" onClick={() => handleButtonClick(value)} className={className}>
       {value}
