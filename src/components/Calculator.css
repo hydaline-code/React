@@ -1,4 +1,5 @@
 
+
 body {
   background-image: url('../img/img.jpg');
   background-size: cover;
@@ -22,7 +23,6 @@ h5 {
 header {
   display: flex;
   justify-content: space-between;
-  border: solid 2px red;
   background: conic-gradient(#7055ba, #ee4b2b,#ffffff, #38b7da);
   color: #fff;
   display: flex;
@@ -41,6 +41,10 @@ header .nav-menu {
 header .nav-menu li {
   margin-left: 0.3rem;
   
+}
+
+.menu {
+  display: none;
 }
 
 .logo {
@@ -100,6 +104,8 @@ header .nav-menu li {
   right: 10rem;
   font-style: italic;
 }
+
+
 
 .appquotes1 {
   text-align: center;
@@ -169,7 +175,7 @@ button.last {
 }
 
 .wide {
-  width: 120px; /* Width of a single column */
+  width: 120px;
 }
 
 button:hover {
@@ -224,3 +230,121 @@ h2 span:nth-child(3) {
 h2 span:nth-child(4) {
   animation-delay: 1.5s;
 }
+
+@media screen and (max-width: 767px) {
+
+  .menu {
+    display: block;
+    font-size: 30px;
+    color: rgb(20, 20, 19);
+  }
+
+.calculator-page {
+  display:  flex;
+  margin-top: 2rem;
+ flex-direction: column;
+  
+}
+
+  .calculator {
+    max-width: 320px; 
+    margin-left: 1rem;
+  }
+
+  .calculator-page h2 {
+   
+     width: 95%;
+     margin-left: 1rem;
+   }
+   
+   .calculator-page h2 span {
+     display: inline-block;
+     transform: translateY(100%);
+     opacity: 0;
+     margin-left: 0.5rem;
+     animation: word-fade-in 1.5s ease-out forwards;
+     font-size: 32px; 
+   }
+
+   .homepage {
+    margin: 5rem auto;
+    width: auto;
+   }
+
+   
+.homepage p {
+  font-size: 20px;
+}
+
+   header {
+    position: fixed;
+    padding: 0.7rem;
+    background-image: linear-gradient(to bottom right, rgb(154, 231, 103), white);
+  }
+
+   header .nav-menu {
+    display: none;
+   }
+
+   
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 0rem;
+  display: flex;
+}
+
+.logo h4 {
+  margin: 0.5rem 0 1.5rem 0.5rem;
+  font-size: 15px;
+  color: black;
+  white-space: nowrap;
+}
+
+.appquotes1 {
+  width: auto;
+  margin-left: 0rem;
+  font-size: 22px;
+}
+
+.appquotes1 h3 {
+  font-size: 20px;
+  padding: 0.3rem;
+}
+
+header {
+  position: relative;
+}
+
+header .open {
+  position: absolute;
+   display: flex;
+   background: linear-gradient(to bottom right, rgb(209, 237, 85), white);
+   top: 2rem;
+   right: 0;
+   border-radius: 3px;
+   width: 100%;
+   margin-right: 0;
+}
+
+header .open li {
+ margin-left: 2rem;
+}
+
+header .open li a {
+  color: black;
+  font-size: 20px;
+  
+}
+ 
+ header .open li:nth-child(2){
+   margin-right: 0.3rem;
+  }
+ 
+  header .open li:nth-child(3){
+   margin-right: 0.2rem;
+  }
+
+   
+}
+
