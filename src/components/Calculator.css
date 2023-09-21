@@ -14,9 +14,76 @@ h5 {
   margin-left: 4rem;
 }
 
-.App {
+header {
   display: flex;
-  margin-top: 3rem;
+  justify-content: space-between;
+  background: conic-gradient(#7055ba, #ee4b2b, #fff, #38b7da);
+  color: #fff;
+  align-items: center;
+}
+
+header .nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 20px;
+  margin-right: 2rem;
+}
+
+header .nav-menu li {
+  margin-left: 0.3rem;
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+  display: flex;
+}
+
+.logo h4 {
+  margin: 0.5rem  0 1rem 2rem;
+  font-size: 23px;
+  color: black;
+  white-space: nowrap;
+}
+
+.homepage {
+  border: solid 1px black;
+  border-top-width: 0;
+  width: 60%;
+  margin: 5rem 0 0 15rem;
+  text-align: center;
+  background: rgb(205, 255, 255);
+}
+
+.homepage h2 {
+  background: linear-gradient(to right, #6142b5 45%, #f15d3f);
+  position: relative;
+  top: -1.9rem;
+  border-radius: 0.9rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.homepage p {
+  font-size: 30px;
+}
+
+.nav-menu a {
+  color: beige;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.nav-menu a:hover {
+  color: rgb(49, 48, 48);
+  text-decoration: none;
 }
 
 .appquote {
@@ -29,18 +96,39 @@ h5 {
   font-style: italic;
 }
 
-h3 {
-  color: blue;
+.appquotes1 {
+  text-align: center;
+  border: solid 1px black;
+  font-style: italic;
+  width: 60%;
+  margin-left: 15rem;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 5rem;
+  background: #fbfbfb;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+
+.appquotes1 h3 {
+  background: linear-gradient(to right, #6142b5 45%, #f15d3f);
+  position: relative;
+  top: -1.9rem;
+  border-radius: 0.9rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .calculator {
   width: 320px;
-  margin: 1rem auto;
+  margin: 1rem 0 0 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
-  background-color: #f4f4f4;
+  background: linear-gradient(to bottom, #b24745, #fff);
 }
 
 .display {
@@ -75,9 +163,162 @@ button.last {
 }
 
 .wide {
-  width: 120px; /* Width of a single column */
+  width: 120px;
 }
 
 button:hover {
-  background-color: #e3e0e0;
+  background-color: #c6ddfe;
+}
+
+.calculator-page {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+
+.calculator-page h2 {
+  margin: 2rem 0 0 3rem;
+  overflow: hidden;
+}
+
+.calculator-page h2 span {
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0;
+  margin-left: 0.5rem;
+  animation: word-fade-in 1.5s ease-out forwards;
+  font-size: 32px;
+}
+
+@keyframes word-fade-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h2 span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+h2 span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+h2 span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+h2 span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: block;
+    font-size: 30px;
+    color: rgb(20, 20, 19);
+  }
+
+  .calculator-page {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .calculator {
+    max-width: 320px;
+    margin-left: 1rem;
+  }
+
+  .calculator-page h2 {
+    width: 95%;
+    margin-left: 1rem;
+  }
+
+  .calculator-page h2 span {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    margin-left: 0.5rem;
+    animation: word-fade-in 1.5s ease-out forwards;
+    font-size: 32px;
+  }
+
+  .homepage {
+    margin: 5rem auto;
+    width: auto;
+  }
+
+  .homepage p {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 0.7rem;
+    position: relative;
+    background-image: linear-gradient(to bottom right, rgb(154, 231, 103), white);
+  }
+
+  header .nav-menu {
+    display: none;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    display: flex;
+  }
+
+  .logo h4 {
+    margin: 0.5rem 0 1.5rem 0.5rem;
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+  }
+
+  .appquotes1 {
+    width: auto;
+    margin-left: 0;
+    font-size: 22px;
+  }
+
+  .appquotes1 h3 {
+    font-size: 20px;
+    padding: 0.3rem;
+  }
+
+  header .open {
+    position: absolute;
+    display: flex;
+    background: linear-gradient(to bottom right, rgb(209, 237, 85), white);
+    top: 2rem;
+    right: 0;
+    border-radius: 3px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  header .open li {
+    margin-left: 2rem;
+  }
+
+  header .open li a {
+    color: black;
+    font-size: 20px;
+  }
+
+  header .open li:nth-child(2) {
+    margin-right: 0.3rem;
+  }
+
+  header .open li:nth-child(3) {
+    margin-right: 0.2rem;
+  }
 }
