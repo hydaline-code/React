@@ -4,27 +4,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from '../img/logo.png';
 
-
-
-
 function Header() {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
   return (
     <header className="header">
       <div className="logo">
-        <img className='logo' src={logo} alt="Logo" />
+        <img className="logo" src={logo} alt="Logo" />
         <h4>Maths  Magicians</h4>
-        
-       
+
       </div>
-    
 
       <nav>
 
@@ -38,9 +31,9 @@ function Header() {
           <li>
             <Link to="/quotes">Quotes |</Link>
           </li>
-                 
+
         </ul>
-        <FontAwesomeIcon icon={faBars} className="menu" onClick={handleMenuToggle}  />
+        <FontAwesomeIcon icon={faBars} className="menu" onClick={handleMenuToggle} />
       </nav>
     </header>
   );

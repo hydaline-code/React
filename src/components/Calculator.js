@@ -65,7 +65,7 @@ const Calculator = () => {
       </div>
     </div>
 
-/* <div className="calculator">
+  /* <div className="calculator">
       <h5>React Calculator App</h5>
       <div className="display">{displayValue}</div>
       <div className="buttons">

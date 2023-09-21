@@ -7,7 +7,7 @@
 //   return (
 
 //     <div className="App">
-      
+
 //       <Router>
 //   <Routes>
 //           <Route path="/" exact component={homePage} />
@@ -52,10 +52,10 @@ import Header from './components/header';
 
 function App() {
   return (
-    
+
     <div className="App">
       <Router>
-      <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/calculator" element={<CalculatorPage />} />
@@ -68,13 +68,13 @@ function App() {
 
 function CalculatorPage() {
   return (
-    <div className='calculator-page'>
+    <div className="calculator-page">
       <h2>
-        <span>Let's</span>
+        <span>Lets</span>
         <span>do</span>
         <span>some</span>
         <span>maths!</span>
-        </h2>
+      </h2>
       <Calculator />
     </div>
   );
@@ -83,11 +83,10 @@ function CalculatorPage() {
 function QuotePage() {
   return (
     <div className="appquotes1">
-        <h3>Checkout some quotes</h3>
-        <QuoteDisplay />
+      <h3>Checkout some quotes</h3>
+      <QuoteDisplay />
     </div>
   );
 }
 
 export default App;
-
