@@ -37,6 +37,7 @@
     -Added components 
     -Fetched data from API to display quotes on the screen
     -Make a full fonctioning website for our App
+    -Testing uing jest has been implemented 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
