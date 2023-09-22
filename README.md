@@ -83,8 +83,8 @@ Install this project with:
 
 👤 **Victor Kanyi**
 
-- GitHub: [https://github.com/jkanyi-wen]
-- LinkedIn: [https://www.linkedin.com/in/V_Kanyi/]
+- GitHub: [https://github.com/jkanyi-web]
+- LinkedIn: [https://www.linkedin.com/in/victor-kanyi/]
 
 ## 🔭 Future Features <a name="future-features"></a>
 
