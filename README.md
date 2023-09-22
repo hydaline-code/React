@@ -4,22 +4,21 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [� Table of Contents](#-table-of-contents)
+- [Math Magicians](#math-magicians)
+  - [🛠Built With](#built-with)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Live demo](#live-demo)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing](#-contributing)
+  - [Show your support](#show-your-support)
+  - [Acknowledgments](#acknowledgments)
+  - [📝 License](#-license)
 
 #  Math Magicians
 
@@ -84,6 +83,14 @@ Install this project with:
 
 - GitHub: [https://github.com/hydaline-code]
 - LinkedIn: [https://www.linkedin.com/in/charlene-djoungang-0851aa21a/]
+
+
+
+
+👤 **Victor Kanyi**
+
+- GitHub: [https://github.com/jkanyi-wen]
+- LinkedIn: [https://www.linkedin.com/in/V_Kanyi/]
 
 ## 🔭 Future Features <a name="future-features"></a>
 
