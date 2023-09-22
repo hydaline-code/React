@@ -90,7 +90,7 @@ Install this project with:
 👤 **Hydaline**
 
 - GitHub: [https://github.com/hydaline-code]
-- LinkedIn: [https://www.linkedin.com/in/charlene-djoungang-0851aa21a/]
+- LinkedIn: [https://www.linkedin.com/in/hydaline-djougang-0851aa21a/]
 
 👤 **Victor Kanyi**
 
