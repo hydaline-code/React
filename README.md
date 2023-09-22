@@ -72,12 +72,6 @@ Install this project with:
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-### Live demo
-> A live demo link will be uploaded soon.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 👥 Author <a name="authors"></a>
 
 👤 **Hydaline**
