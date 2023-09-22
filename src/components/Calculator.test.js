@@ -27,4 +27,9 @@ describe('Calculator', () => {
 
     expect(display.textContent).toBe('0');
   });
+
+  test('Calculator renders correctly', () => {
+    const { asFragment } = render(<Calculator />);
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

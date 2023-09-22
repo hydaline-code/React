@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './header';
 
 it('should navigate to the home page when the Home link is clicked', () => {
@@ -40,4 +40,9 @@ it('should navigate to the quotes page when the Quotes link is clicked', () => {
   fireEvent.click(quotesLink);
 
   expect(window.location.pathname).toBe('/quotes');
+});
+
+test('Header renders correctly', () => {
+  const { asFragment } = render(<Header />);
+  expect(asFragment()).toMatchSnapshot();
 });

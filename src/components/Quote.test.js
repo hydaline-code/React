@@ -45,4 +45,10 @@ describe('QuoteDisplay component', () => {
 
     await waitFor(() => expect(getByText('Error: Failed to fetch quote')).toBeInTheDocument());
   });
+
+  // jest snapshot
+  test('QuoteDisplay renders correctly', () => {
+    const { asFragment } = render(<QuoteDisplay />);
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
