@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './header.js';
+import Header from './header';
 
 it('should navigate to the home page when the Home link is clicked', () => {
   const { getByText } = render(
     <Router>
       <Header />
-    </Router>
+    </Router>,
   );
 
   const homeLink = getByText('Home |');
@@ -20,7 +20,7 @@ it('should navigate to the calculator page when the Calculator link is clicked',
   const { getByText } = render(
     <Router>
       <Header />
-    </Router>
+    </Router>,
   );
 
   const calculatorLink = getByText('Calculator |');
@@ -33,7 +33,7 @@ it('should navigate to the quotes page when the Quotes link is clicked', () => {
   const { getByText } = render(
     <Router>
       <Header />
-    </Router>
+    </Router>,
   );
 
   const quotesLink = getByText('Quotes |');

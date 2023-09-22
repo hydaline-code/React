@@ -1,4 +1,4 @@
-import calculate from "./calculate.js";
+import calculate from './calculate';
 
 describe('calculate', () => {
   it('should handle AC button', () => {
@@ -20,6 +20,4 @@ describe('calculate', () => {
     const result = calculate({ total: '10', next: '53', operation: '+' }, '=');
     expect(result).toEqual({ total: '63', next: null, operation: null });
   });
-
-  
 });

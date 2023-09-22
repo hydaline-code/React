@@ -1,4 +1,4 @@
-import operate from './operate.js';
+import operate from './operate';
 
 describe('operate', () => {
   it('should perform addition', () => {
@@ -21,7 +21,7 @@ describe('operate', () => {
     expect(result).toBe('2');
   });
 
-  // Edge cases handling 
+  // Edge cases handling
   it('should handle division by zero', () => {
     const result = operate('10', '0', '÷');
     expect(result).toBe("Can't divide by 0.");
@@ -42,5 +42,4 @@ describe('operate', () => {
       operate('10', '5', '#');
     }).toThrow("Unknown operation '#'");
   });
-
 });

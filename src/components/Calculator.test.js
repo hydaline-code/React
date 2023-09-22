@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Calculator from './Calculator.js';
+import Calculator from './Calculator';
 
 describe('Calculator', () => {
   it('should render correctly', () => {
@@ -19,12 +19,12 @@ describe('Calculator', () => {
     const { container } = render(<Calculator />);
     const display = container.querySelector('.display');
     // Simulate clicking a button other than "AC"
-    const button = container.querySelector('.wide'); 
+    const button = container.querySelector('.wide');
     fireEvent.click(button);
     // Simulate clicking the "AC" button
-    const acButton = container.querySelector('.color'); 
+    const acButton = container.querySelector('.color');
     fireEvent.click(acButton);
-  
+
     expect(display.textContent).toBe('0');
   });
 });
