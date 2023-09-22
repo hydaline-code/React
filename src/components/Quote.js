@@ -48,9 +48,8 @@ const QuoteDisplay = () => {
   if (error) {
     return (
       <div>
-        Error:
-        {error}
-      </div>
+      Error: {error}
+    </div>
     );
   }
 
