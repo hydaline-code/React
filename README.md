@@ -1,4 +1,4 @@
-<a id="readme-top">React</a>
+<a name="readme-top">React</a>
 
 
 
@@ -48,7 +48,7 @@
 
 To get a local copy up and running, follow these steps.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
 
@@ -84,7 +84,6 @@ Install this project with:
    
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Hydaline**
