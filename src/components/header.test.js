@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, MemoryRouter } from 'react-router-dom';
+import renderer from 'react-test-renderer';
 import Header from './header';
 
 it('should navigate to the home page when the Home link is clicked', () => {
@@ -42,7 +43,12 @@ it('should navigate to the quotes page when the Quotes link is clicked', () => {
   expect(window.location.pathname).toBe('/quotes');
 });
 
-test('Header renders correctly', () => {
-  const { asFragment } = render(<Header />);
-  expect(asFragment()).toMatchSnapshot();
+test('Header snapshot test', () => {
+  const component = renderer.create(
+    <MemoryRouter>
+      <Header />
+    </MemoryRouter>,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
