@@ -8,6 +8,7 @@
 - [Math Magicians](#math-magicians)
   - [🛠Built With](#built-with)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo and video ](#-live-demo-and-video-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -60,6 +61,8 @@ In order to run this project you need:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### See Live 
+🚀[ Live Demo](https://mathmagicians-rvx3.onrender.com/)
 
 ### Setup
 
