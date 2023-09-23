@@ -49,6 +49,7 @@ const QuoteDisplay = () => {
     return (
       <div>
         Error:
+        {' '}
         {error}
       </div>
     );

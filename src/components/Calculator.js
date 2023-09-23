@@ -65,38 +65,6 @@ const Calculator = () => {
       </div>
     </div>
 
-  /* <div className="calculator">
-      <h5>React Calculator App</h5>
-      <div className="display">{displayValue}</div>
-      <div className="buttons">
-        <div className="row" key={uuidv4()}>
-          {buttonRows[0].map((button) => (
-            <CalculatorButtons key={button} value={button} className="" />
-          ))}
-        </div>
-        <div className="row" key={uuidv4()}>
-          {buttonRows[1].map((button) => (
-            <CalculatorButtons key={button} value={button} className="" />
-          ))}
-        </div>
-        <div className="row" key={uuidv4()}>
-          {buttonRows[2].map((button) => (
-            <CalculatorButtons key={button} value={button} className="" />
-          ))}
-        </div>
-        <div className="row" key={uuidv4()}>
-          {buttonRows[3].map((button) => (
-            <CalculatorButtons key={button} value={button} className="" />
-          ))}
-        </div>
-        <div className="row" key={uuidv4()}>
-          {buttonRows[4].map((button) => (
-            <CalculatorButtons key={button} value={button} className="" />
-          ))}
-        </div>
-      </div>
-    </div> */
-
   );
 };
 
