@@ -62,7 +62,7 @@ In order to run this project you need:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### See Live 
-🚀[ Live Demo](https://mathmagicians-rvx3.onrender.com/)
+🚀[ Live Demo](https://math-magicians-guq7.onrender.com/)
 
 ### Setup
 
